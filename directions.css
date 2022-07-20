@@ -75,7 +75,8 @@ iframe {
     font-size: 1.6em;
     font-family: 'Nunito Sans', sans-serif;
     background: rgba(0,0,0,.5);
-    border-radius: .2em;   
+    border-radius: .2em;
+    margin-bottom: 20rem;   
 }
 .para-directions {
     padding: .5em;
