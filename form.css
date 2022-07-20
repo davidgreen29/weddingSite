@@ -51,7 +51,7 @@ body {
 #form-h1 {
     text-align: center;
     margin-top: 1em;
-    font-size: 5vh;
+    font-size: 3em;
     color: white;
     position: relative;
     font-weight: 200;
@@ -60,7 +60,7 @@ body {
 }
 #form-h2 {
     text-align: center;
-    font-size: 2vh;
+    font-size: 1.3em;
     color: white;
     position: relative;
     font-weight: 100;

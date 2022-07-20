@@ -17,7 +17,7 @@ body {
 .main-background {
    grid-area: main;
    min-height: 100%;
-   background-image: url('/images/David+RyanEngagement-114.jpg');
+   background-image: url('images/David+RyanEngagement-114.jpg');
    background-position: center ;
    background-repeat: no-repeat;
    background-size: cover;

@@ -17,7 +17,7 @@ body {
 .background {
    grid-area: main;
    min-height: 100%;
-   background-image: url('/images/THE+LANDING-40-1152w.webp');
+   background-image: url('images/THE+LANDING-40-1152w.webp');
    background-position: center ;
    background-repeat: no-repeat;
    background-size: cover;
