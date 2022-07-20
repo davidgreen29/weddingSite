@@ -1,5 +1,6 @@
 body {
     margin: 0; 
+    
 }
 .nav-form-container {
     height: 100vh;
@@ -126,6 +127,8 @@ form li + li {
     box-sizing: border-box;
     border: .1em  solid #999;
     width: 100%;
+    
+    
 }
 .form-submit-button {
  display: block;
@@ -167,7 +170,7 @@ form li + li {
         border: .1em solid #CCC;
         position: relative;
         border-radius: 1em;
-        margin-bottom: 4em;
+        margin-bottom: 20em;
     }
     }
     

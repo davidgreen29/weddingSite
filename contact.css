@@ -76,13 +76,13 @@ nav, li {
     padding-top:1em;
     position: relative;
     border-bottom: .1rem solid black;
-    width: 85%;
+    width: 70%;
     margin-bottom: 1.2em;
 }
  .name::after {
     content: '+';
-    position:absolute;
-    margin-left: 13em;   
+    position:relative;
+    margin-left: 80%;   
 }
 .contact-info {
     text-align: left;
@@ -113,7 +113,7 @@ nav, li {
     font-size: 2rem;
     transition: .5s;
 }
-@media (min-width: 30em) {
+@media (min-width: 42rem) {
     .main-container {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 100% 100%;
@@ -137,5 +137,11 @@ nav, li {
        margin-left: auto;
        margin-right: auto;  
        border-radius: .3em; 
+    }
+
+    .name::after {
+        content: '+';
+        position:relative;
+        margin-left: 90%;   
     }
     }

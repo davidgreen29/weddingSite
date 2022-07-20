@@ -72,7 +72,7 @@ nav, li {
 .nav-logo {
     display: none;
 }
-@media (min-width: 30em) {
+@media (min-width: 42rem) {
     .main-container {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 100% 100%;
