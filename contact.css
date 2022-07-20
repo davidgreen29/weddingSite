@@ -1,0 +1,141 @@
+body {
+    margin:0;
+}
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: .08fr 1fr;
+    grid-template-areas:
+    "nav"
+    "main";   
+}
+.nav-side-bar {
+    grid-area: nav;
+    background-color: rgb(248, 240, 227);   
+}
+.background {
+   grid-area: main;
+   min-height: 100%;
+   background-image: url('/images/David+RyanEngagement-117.jpg');
+   background-position: center ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   max-width: 100%;
+   overflow-x: hidden;
+}
+nav, li {
+    display: inline;
+}
+.nav-buttons {
+    margin-top: 1.25em;
+    padding:0;
+    text-align: center;
+    list-style: none;    
+}
+.nav-buttons a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #888;
+    padding: .25em;  
+}
+.nav-buttons a:hover {
+    color: rgb(28, 28, 28);
+}
+
+.nav-logo {
+    display: none;
+}
+
+#title {
+    margin-top: 1em;
+    font-size: 6vh;
+    color: white;
+    display: block;
+    line-height: 1em;
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: .2em; 
+}
+.contact-info-container {
+    background-color: rgba(248, 240, 227, 0.7);;
+    margin: 4em auto;
+    width: 70%;
+    border-radius: .2em;  
+}
+ .name {
+    font-family: 'Nunito Sans', sans-serif;
+    color:rgba(64,64,64);
+    font-size: 3vh;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 1em;
+    padding-top:1em;
+    position: relative;
+    border-bottom: .1rem solid black;
+    width: 85%;
+    margin-bottom: 1.2em;
+}
+ .name::after {
+    content: '+';
+    position:absolute;
+    margin-left: 13em;   
+}
+.contact-info {
+    text-align: left;
+    font-size: 1.2em;
+    padding-left: 1em;
+    line-height:2em;
+    height: 0em;
+    overflow: hidden;
+    transition: .5s;
+}
+#contact-links {
+  color:rgba(64,64,64);
+  font-family: 'Nunito Sans', sans-serif;
+    
+}
+#contact-links a {
+    color: rgb(102, 102, 237);  
+}
+.contact-info-container .contact-container.active .contact-info {
+    height: 10rem;
+}
+.contact-info-container .contact-container.active .name {
+    font-size: 1rem;
+    transition: .5s;
+}
+.contact-info-container .contact-container.active .name::after {
+    content: '-';
+    font-size: 2rem;
+    transition: .5s;
+}
+@media (min-width: 30em) {
+    .main-container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100% 100%;
+        grid-template-areas: 
+        "nav main";   
+    }
+    nav, li {
+        display: block;   
+    }
+    .nav-buttons, a {
+        font-size: 1.2em;
+        line-height: 2.25em;
+        padding: 0;
+        margin-top: 1em;   
+    }
+    .nav-logo {
+        display: flex;
+       max-width: 100%;
+       height: 20%;
+       margin-top: 2.5em;
+       margin-left: auto;
+       margin-right: auto;  
+       border-radius: .3em; 
+    }
+    }

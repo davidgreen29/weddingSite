@@ -1,0 +1,170 @@
+body {
+    margin: 0; 
+}
+.nav-form-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: .08fr 1fr;
+    grid-template-areas:
+    "nav"
+    "form";     
+}
+.nav-side-bar {
+    grid-area: nav;
+    background-color: rgb(248, 240, 227);   
+}
+.nav-list {
+    display: inline;
+}
+.nav-buttons {
+    margin-top: 1.25em;
+    padding:0;
+    text-align: center;
+    list-style: none;    
+}
+.nav-buttons a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #888;
+    padding: .25em;  
+}
+.nav-buttons a:hover {
+    color: rgb(28, 28, 28);
+}
+.nav-logo {
+    display: none;
+}
+.main-form {
+    grid-area:form;
+    min-height: 100%;
+    max-width: 100%;
+    background-image: url('/images/annie-spratt-wuc-KEIBrdE-unsplash.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+     
+}
+#form-h1 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 5vh;
+    color: white;
+    position: relative;
+    font-weight: 200;
+   letter-spacing: .2em;
+   margin-bottom: .1em;
+}
+#form-h2 {
+    text-align: center;
+    font-size: 2vh;
+    color: white;
+    position: relative;
+    font-weight: 100;
+    margin-top: .1em;
+}
+#rsvp-form {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    width: 80%;
+    border:none;
+    position: relative;
+    list-style: none;   
+}
+#name, #email, #phone-num {
+    width: 100%;
+    height: 2em; 
+}
+form li + li {
+    margin-top: 1.5em;   
+}
+.name-label, .email-label, .phone-label {
+    display: block;
+    color: white;
+    font-family:'Nunito Sans', sans-serif ;
+    margin-bottom: .3em;
+    font-size: 2.2vh;   
+}
+.radio-label {
+    color: white;
+    font-size: 2.2vh;
+    font-family:'Nunito Sans', sans-serif;
+    margin-bottom: .3em;
+}
+#yes-label, #no-label {
+    color: white;
+    font-family:'Nunito Sans', sans-serif;
+    margin-left: .5em;
+}
+.num-attend {
+    text-align: left;
+    color: white;
+    font-size: 2.2vh;
+    font-family: 'Nunito Sans', sans-serif;   
+}
+#number-attending {
+    margin-top: .3em;
+}
+.message-label {
+    display: block;
+    text-align: left;
+    color: white;
+}
+.message-label {
+    font-size: 2.2vh;
+    margin-bottom: .2em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+ #message-form {
+    font: 1em sans-serif;
+    box-sizing: border-box;
+    border: .1em  solid #999;
+    width: 100%;
+}
+.form-submit-button {
+ display: block;
+ width: 30%;
+ margin: 1em auto;
+}
+@media (min-width: 47em) {
+    .nav-form-container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100% 100%;
+        grid-template-areas: 
+        "nav form";   
+    }
+    .nav-list {
+        display: block;   
+    }
+    .nav-buttons, a {
+        font-size: 1.2em;
+        line-height: 2.25em;
+        padding: 0;
+        margin-top: 1em;   
+    }
+    .nav-logo {
+        display: flex;
+       max-width: 100%;
+       height: 20%;
+       margin-top: 2.5em;
+       margin-left: auto;
+       margin-right: auto;   
+    }
+    #rsvp-form {
+        margin: 0 auto;
+        width:30em;
+        height: 35em;
+        padding: 2em;
+        border: .1em solid #CCC;
+        position: relative;
+        border-radius: 1em;
+        margin-bottom: 4em;
+    }
+    }
+    
+
+
+

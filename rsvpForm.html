@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        
+        <title>RSVP</title>
+        
+    </head>
+    <body>
+        <div class="nav-form-container">
+            <script id="replace_with_navbar" src="nav.js" defer></script>
+      <main id="form" class="main-form">
+        <h1 id="form-h1">RSVP</h1>
+        <h2 id="form-h2">Please respond by 08.30.22</h2>
+      <form id="rsvp-form"  name="submit-to-google-sheet" >
+                <!-- input for name -->
+                <li>
+                    <label for="name" class="name-label">Name</label>
+                    <input class="personal-info" type="text" id="name" name="name" maxlength="50" required >
+                </li>
+
+                <!-- input for email -->
+                <li>
+                    <label for="email" class="email-label">Email</label>
+                    <input class="personal-info"type="email" id="email" name="email" maxlength="25">
+                </li>
+
+                <!-- input for phone number -->
+                <li>
+                    <label for="phone-num" class="phone-label">Phone #</label>
+                    <input class="personal-info" type="tel" id="phone-num" name="phone_num" maxlength="20">
+                </li>
+                
+                <!-- radio button will they be attending -->
+                 <li id="attending-or-not" >
+                    <label  for="attending" class="radio-label">Will you be attending?</label><br>
+                    <input type="radio" name="attending" id="attending" value="yes" class="yes-radio" checked><label id="yes-label">Yes</label><br>
+                    <input type="radio" name="attending" id="attending" value="no" ><label id="no-label">No</label><br>
+                </li>
+                <!-- input for number of attendents -->
+                <li>
+                    <label for="number-attending" class="num-attend">Please let us know the number of people
+                         attending yourself included.</label>
+                         <br>
+                    <input type="number" id="number-attending" name="party-size" min="0" max="10" required>
+                </li>
+
+                <!-- message input area  -->
+                <li>
+                    <label for="message-form"class="message-label">Message</label>
+                    <textarea id="message-form" name="message" maxlength="150"></textarea>
+                </li>
+
+                <!-- submit button  -->
+                <li >
+                    <button type="submit" class="form-submit-button" >Submit</button>
+                </li>
+            </ul>
+
+        </form>
+    </main>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
