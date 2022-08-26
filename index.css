@@ -1,6 +1,10 @@
 /*index.html styling */
+*{
+    outline: none;
+}
 body {
     margin:0;
+
     
 }
 .container-main {
@@ -64,6 +68,7 @@ nav, li {
     padding:0;
     text-align: center;
     list-style: none;    
+   
 }
 .nav-buttons a {
     font-family: 'Nunito Sans', sans-serif;
