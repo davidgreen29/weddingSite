@@ -86,8 +86,8 @@ nav, li {
 }
  .name::after {
     content: '+';
-    position:relative;
-    margin-left: 6rem;   
+    position:fixed;
+    margin-left: 25%;   
 }
 .contact-info {
     text-align: left;
@@ -117,6 +117,7 @@ nav, li {
     content: '-';
     font-size: 2rem;
     transition: .5s;
+    position: relative;
 }
 @media (min-width: 42rem) {
     .main-container {
@@ -143,10 +144,11 @@ nav, li {
        margin-right: auto;  
        border-radius: .3em; 
     }
+    
 
     .name::after {
         content: '+';
-        position:relative;
-        margin-left: 20rem;   
+        position:fixed;
+        margin-left: 27%;   
     }
     }
