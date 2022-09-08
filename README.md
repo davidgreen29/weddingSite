@@ -9,10 +9,12 @@ This is a site where guests can find info for my wedding and rsvp to it.
 navigation
 
 html/pages/folder
+
 inside the pages folder you can find all the pages for the site. index.html is outside this folder because it works
 better with netlify. 
 
 styles
+
 inside the styles folder you can find all the styles besides the main page styles which is located in index.css
 
 scripts 
