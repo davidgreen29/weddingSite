@@ -86,8 +86,8 @@ nav, li {
 }
  .name::after {
     content: '+';
-    position:fixed;
-    margin-left: 25%;   
+    position:absolute;
+    margin-left: 50%;   
 }
 .contact-info {
     text-align: left;
