@@ -14,8 +14,8 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then((response )=> {
-      alert('Success! see you at the wedding',response);
-      window.location.replace("index.html");
+      alert('Success, Thankyou!',response);
+      window.location.replace("/index.html");
     } )
     .catch(error => console.error('Error!', error.message))
 });
