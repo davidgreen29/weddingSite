@@ -28,7 +28,8 @@ is sent to google sheets and stored there. I chose this because it is easy for m
 contact script
 this allows the user to open and close the contact data. 
 
-For this site a framework like react for the front end would have been cleaner but I used plain html, css, and javascript because I wanted to refresh my skills on those. I used plain CSS and no libraries because I wanted the 
+I would change this site if I were to make it again there are a lot of dependancies I would remove and I would design it completely differently now. 
+For this site a framework like react for the front end would have been cleaner but I used plain html, css, and javascript because I wanted to for fun. I used plain CSS and no libraries because I wanted the 
 design to be completely custom. This also is good practice for CSS. The site is fully responsive and works for
 mobile screens also. 
 
